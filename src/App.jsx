@@ -43,7 +43,7 @@ const App = () => {
     id: 3
   }]
   return (
-    <div className="App">
+    <div className="app">
       <div className='app_header'>
         <Card data = {data[0]}/>
         <Card data = {data[1]}/>

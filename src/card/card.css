@@ -3,7 +3,7 @@
         --defaultColor: #2EA8E6;  
         --selectedColor: #2EA8E6;
     }      */
-    .card-border{    
+    .card__border {    
         position: relative;
         width: 320px;
         height: 480px;
@@ -23,6 +23,11 @@
         clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);  
         cursor: pointer; 
     } 
+    .card__img {
+        position: absolute;
+    margin-left: -35px;
+    margin-top: 200px;
+    }
     
     .content {
         position: absolute;
@@ -120,6 +125,7 @@
     }
     .selectedSupheader{
         color: #E62E7A;
+        font-size: 22px;
     }
     
 }

@@ -34,7 +34,7 @@ class Card extends Component {
 
 
     render() {
-        const { name, taste, portions, present, weight, id, ended } = this.props.data;
+        const { commname, name, taste, portions, present, weight, id, ended } = this.props.data;
         const { selected, hover } = this.state;
 
         const defaultOffer = this.defaultOffer();
@@ -49,7 +49,7 @@ class Card extends Component {
 
         return (
             <div className="card" key={id}  >
-                <div className={"card-border " + (ended ? "disabled" : (selected ? "selected" : null))} >
+                <div className={"card__border " + (ended ? "disabled" : (selected ? "selected" : null))} >
                     <div className="card__view " onClick={this.onSelected} onMouseEnter={this.onSelectedHover} onMouseLeave={this.offSelectedHover}>
                         <img className={"card__img " + (ended ? "disabled-img" : null)} src={Cat} alt="Нямушка с рыбой" />
                         <div className="content">
